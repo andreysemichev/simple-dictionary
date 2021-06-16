@@ -1,7 +1,8 @@
 import cn from "classnames";
+import { ChangeEvent, useState } from "react";
 
 import Search from "components/Search";
-import { ChangeEvent, useState } from "react";
+import WordList from "components/WordList";
 
 import styles from "./styles.module.scss"
 
@@ -15,7 +16,12 @@ const Index: React.FC = () => {
     return (<>
         <main className={styles.main}>
             <div className={cn(styles.mainInner, styles.container)}>
-                <Search searchValue={searchValue} handleUpdateSearchValue={handleUpdateSearchValue} />
+                <div>
+                    <Search searchValue={searchValue} handleUpdateSearchValue={handleUpdateSearchValue} />
+                </div>
+                <div>
+                    <WordList />
+                </div>
             </div>
         </main>
     </>);

@@ -1,0 +1,49 @@
+@import "styles/variables";
+@import "styles/fonts";
+@import "styles/global";
+
+.wrapper {
+    display: grid;
+    grid-template-columns: 130px 130px 1fr;
+    align-items: center;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 3px;
+}
+
+.starred {
+    grid-template-columns: 30px 130px 130px 1fr 30px;
+}
+
+.dragAndDrop {
+    color: #0275d8;
+    font-weight: bold;
+
+    &:active {
+        color: lighten(#0275d8, 30%);
+    }
+}
+
+.word {
+    font-weight: bold;
+}
+
+.part {
+    font-style: italic;
+}
+
+.description {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.starred {
+    cursor: pointer;
+    margin-left: auto;
+
+    svg {
+        height: 17px;
+        fill: #0275d8;
+    }
+}
