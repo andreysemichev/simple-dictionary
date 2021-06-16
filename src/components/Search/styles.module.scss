@@ -1,0 +1,36 @@
+@import "styles/variables";
+@import "styles/fonts";
+@import "styles/global";
+
+.search {
+    position: relative;
+}
+
+.input {
+    padding: 7px;
+    border-radius: 3px;
+    background-color: #fff;
+    border-color: lighten($colorBlack, 50%);
+    transition: 0.2s border-color;
+    width: 100%;
+
+    &:focus {
+        border-color: #0275d8;
+    }
+
+    &:focus + .searchIcon {
+        fill: #0275d8 !important;
+    }
+}
+
+.searchIcon {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    right: 7px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+    fill: lighten($colorBlack, 50%);
+    transition: fill 0.2s;
+}
