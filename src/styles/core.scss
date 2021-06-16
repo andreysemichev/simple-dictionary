@@ -1,0 +1,63 @@
+@import "styles/variables";
+@import "styles/fonts";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    color: $colorBlack;
+    background: $colorWhite;
+    font-family: $fontPrimary;
+    font-size: $fontSize;
+    position: relative;
+}
+
+input, button {
+    font-family: inherit;
+    font-size: inherit;
+    outline: none;
+    border-radius: 0;
+    border: 1px solid $colorBlack;
+    background-color: $colorWhite;
+}
+
+button {
+    cursor: pointer;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: contain;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+}
+
+main {
+    flex: 1 0 auto;
+}
+
+footer {
+    flex: 0 0 auto;
+}
+
+#root {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
